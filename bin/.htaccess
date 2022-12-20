@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^(.*)$ https://ua.ehoss.com/$1 [R=301,L]
+Deny from all
+Options -Indexes
