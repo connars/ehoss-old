@@ -241,3 +241,16 @@ body {
     height: 190.5vh;
     z-index: 1;
 }
+
+.gallery__list-mobile {
+    display: none;
+}
+@media screen and (max-width: 800px){
+    .gallery__list {
+        display: none !important;
+    }
+
+    .gallery__list-mobile {
+        display: block;
+    }
+}
