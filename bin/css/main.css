@@ -98,9 +98,11 @@ body {
 }
 
 #hero {
-    background: url(./img/hero-img.png);
-    background-position: left;
+    background: url(/bin/img/bg1.jpg);
+    background-position: left center;
     background-repeat: no-repeat;
+
+    background-size: 50%;
 }
 .hero__right-title h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -238,4 +240,17 @@ body {
 .line-4 {
     height: 190.5vh;
     z-index: 1;
+}
+
+.gallery__list-mobile {
+    display: none;
+}
+@media screen and (max-width: 800px){
+    .gallery__list {
+        display: none !important;
+    }
+
+    .gallery__list-mobile {
+        display: block;
+    }
 }
