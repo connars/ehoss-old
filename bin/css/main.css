@@ -98,9 +98,11 @@ body {
 }
 
 #hero {
-    background: url(./img/hero-img.png);
-    background-position: left;
+    background: url(/bin/img/bg1.jpg);
+    background-position: left center;
     background-repeat: no-repeat;
+
+    background-size: 50%;
 }
 .hero__right-title h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
