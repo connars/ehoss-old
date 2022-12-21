@@ -18,38 +18,44 @@
     <link rel="icon" type="image/png" sizes="16x16" href="bin/img/favicon.ico">
     <link rel="stylesheet" href="./bin/css/fullpage.css">
     <link rel="stylesheet" href="./bin/css/settings.css">
+    <link rel="stylesheet" href="./bin/css/footer.css">
     <link rel="stylesheet" href="bin/css/main.css">
 </head>
 
 <body>
 
-
-    <!-- BEGIN OF logo-line -->
-    <div class="cont-for-red-l">
-        <div class="line-1"></div>
-        <div class="radius-1">
-            <div class="radius-11"></div>
-        </div>
-        <div class="radius-2">
-            <div class="radius-11"></div>
-        </div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
-        <div class="line-4"></div>
-        <div class="radius-1">
-            <div class="radius-11"></div>
-        </div>
-        <div class="radius-2">
-            <div class="radius-11"></div>
-        </div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
-        <div class="line-1"></div>
-    </div>
-    <!-- END OF logo-line -->
-
     <div id="fullpage">
-        <section class="section fp-auto-height"  id="hero">
+        <!-- BEGIN OF logo-line -->
+        <div style="z-index: 3;" class="cont-for-red-l">
+            <div class="line-1"></div>
+            <div class="radius-1">
+                <div class="radius-11"></div>
+            </div>
+            <div class="radius-2">
+                <div class="radius-11"></div>
+            </div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+            <div class="line-4"></div>
+            <div class="radius-1">
+                <div class="radius-11"></div>
+            </div>
+            <div class="radius-2">
+                <div class="radius-11"></div>
+            </div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+            <div class="line-1"></div>
+        </div>
+        <!-- END OF logo-line -->
+        <section class="section fp-auto-height" id="hero">
+            <header>
+                <div class="header__wrapper">
+                    <a class="header__logo-link" href="">
+                        <!-- <img src="./bin/img/logo-52-130-red.png" alt="logo"> -->
+                    </a>
+                </div>
+            </header>
             <div class="container">
                 <div class="hero__wrapper">
                     <div class="hero__left">
@@ -145,24 +151,352 @@
         <footer class="section" id="footer">
             <div class="footer__top container">
                 <div class="footer__top-nav">
-                    <ul class="nav__info-list">
-                        <li class="nav__info-title">
-                            Title
+                    <ul class="footer__wrapper-list">
+                        <li class="footer__item-col">
+                            <a class="footer__icon-link" href="#">
+                                <img class="footer__icon" src="./bin/img/logo-52-130-red.png" width="30" height="30" alt="logo">
+                            </a>
                         </li>
-                        <li class="nav__info-item">
-                            <a href="">item 1</a>
+                        <li class="footer__item-col">
+                            <ul class="footer__item-lists">
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Equine Ecosystem
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Інженерні платформи
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Платформа моніторингу
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Платформа годування
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Платформа середовища
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Хмарні платформи
+
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Платформа власника
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Платформа господарства
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Платформа індустрії
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Платформа супроводження
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Окремі продукти
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Кінна аптечка
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav__info-item">
-                            <a href="">item 2</a>
+                        <li class="footer__item-col">
+                            <ul class="footer__item-lists">
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Equine Network
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Власникам коней
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Власникам стайнь
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Бізнес спільноті
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Ветеринарам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Нутриціологам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Спортсменам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Тренерам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Навчальним закладам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Архітекторам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Перевізникам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Державним установам
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Інтеграторам
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav__info-item">
-                            <a href="">item 3</a>
+                        <li class="footer__item-col">
+                            <ul class="footer__item-lists">
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Equine Directory				
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                За алфавітом		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                За категоріями		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                За країнами		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Звіти та статистика			
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Як потрапити у каталог?				
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Equine Wiki		
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                За алфавітом		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                За категоріями		
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav__info-item">
-                            <a href="">item 5</a>
+                        <li class="footer__item-col">
+                            <ul class="footer__item-lists">
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Equine Life		
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Історії	
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Події	
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Про коней	
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Технічна інформація					
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Документація		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Завантаження		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Підтримка				
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav__info-item">
-                            <a href="">item 4</a>
+                        <li class="footer__item-col">
+                            <ul class="footer__item-lists">
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        EHOSS			
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Про компанію		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Робота в EHOSS		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Географія	
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Навколишнє середовище				
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Різноманітність та інклюзивність					
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Інвесторам		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Партнери	
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Запити, щодо співпраці				
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Етика та комплаєнс				
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer__lists-item">
+                                    <h3 class="footer__list-heading">
+                                        Контакти	
+                                    </h3>
+                                    <ul class="footer__list">
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Instagram		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Facebook		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Linkedin		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Youtube		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Crunchbase		
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Tiktok	
+                                            </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a class="footer__item-link" href="">
+                                                Researchgate		
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>

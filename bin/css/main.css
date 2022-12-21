@@ -244,6 +244,8 @@ body {
 .gallery__list-mobile {
     display: none;
 }
+
+
 @media screen and (max-width: 800px){
     .gallery__list {
         display: none !important;
