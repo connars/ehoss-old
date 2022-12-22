@@ -1,5 +1,4 @@
 header {
-
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(3.5px);
 }
@@ -7,29 +6,27 @@ header {
 .header__wrapper {
     display: flex;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 50px;
+    height: 63px;
 }
 
-.header__logo-link img {
-    width: 40px;
-    height: 70px;
-    object-fit: contain;
-}
 
 .header__navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     gap: 30.5px;
 }
 
 .header__navber-link {
     text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F5F5F5;
 }
 
 .header__navber-link:hover {
@@ -40,13 +37,39 @@ header {
     border: none;
     background: none;
     display: flex;
+    display: none;
     flex-direction: column;
+    cursor: pointer;
+    margin-right: 79px;
+    align-items: flex-end;
     gap: 3px;
 }
 
 .header__menu-line {
     display: inline-block;
-    width: 30px;
-    height: 3px;
+    width: 27px;
+    height: 3.47px;
     background-color: white;
+    transition: all 0.3s ease;
+}
+
+
+.header__menu-line2 {
+    width: 20px;
+}
+
+.header__menu-btn:hover .header__menu-line{
+    background-color: red;
+}
+
+.header__menu-btn:hover .header__menu-line1 {
+    width: 13px;
+}
+
+.header__menu-btn:hover .header__menu-line2 {
+    width: 21px;
+}
+
+.header__menu-btn:hover .header__menu-line3 {
+    width: 27px;
 }
