@@ -138,7 +138,6 @@ header {
     display: flex;
     flex-direction: column;
     width: 200px;
-    flex-wrap: wrap;
 }
 
 .header__drop-link {
@@ -153,4 +152,8 @@ header {
 
 .header__navbar-item:hover .header__nav-drop {
     display: flex;
+}
+
+.list-thin {
+    width: 160px;
 }
