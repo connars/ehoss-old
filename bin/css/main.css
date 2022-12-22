@@ -270,4 +270,23 @@
     .footer__wrapper-list {
         display: grid
     }
+
+    .gallery__wrapper {
+        align-content: space-evenly;
+    }
+
+    .gallery__heading {
+        display: grid;
+      
+        /* justify-content: space-between; */
+        margin-bottom: 5%;
+    }
+
+    .hero__right {
+        text-align: center;
+    }
+
+    .hero__right-title h1 {
+        font-size: 26px;
+    }
 }
