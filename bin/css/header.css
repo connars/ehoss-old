@@ -73,3 +73,20 @@ header {
 .header__menu-btn:hover .header__menu-line3 {
     width: 27px;
 }
+
+.open-dropdown::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url("./../../img/nav-open.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s ease;
+}
+
+.header__navbar-item:hover .open-dropdown::after {
+    transform: rotate(180deg);
+}
