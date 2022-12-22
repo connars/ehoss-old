@@ -130,13 +130,16 @@
 
 .gallery__wrapper {
     height: 100vh;
+
+    display: grid;
+    align-content: center;
 }
 
 .gallery__heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 /* GALLERY SECTION END */
