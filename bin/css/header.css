@@ -15,7 +15,7 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0;
-    margin-left: auto;
+    margin-left: 60px;
     margin-right: auto;
     gap: 30.5px;
 }
@@ -159,5 +159,9 @@ header {
 }
 
 .list-thin {
-    width: 160px;
+    width: 150px;
+}
+
+.header__logo {
+    margin-left: auto;
 }
