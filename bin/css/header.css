@@ -145,6 +145,10 @@ header {
     color: white;
 }
 
+.header__drop-link:hover {
+    color: red;
+}
+
 .header__mini__heading-link {
     text-decoration: none;
     color: white;
