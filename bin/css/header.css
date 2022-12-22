@@ -24,7 +24,7 @@ header {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 19px;
     color: #F5F5F5;
 }
@@ -79,7 +79,7 @@ header {
     display: inline-block;
     width: 10px;
     height: 10px;
-    margin-left: 10px;
+    margin-left: 3px;
     background-image: url("./../../img/nav-open.svg");
     background-repeat: no-repeat;
     background-position: center;
