@@ -266,4 +266,8 @@
     .gallery__list-mobile {
         display: block;
     }
+
+    .footer__wrapper-list {
+        display: grid
+    }
 }
