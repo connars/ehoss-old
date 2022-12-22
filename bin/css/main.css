@@ -1,26 +1,33 @@
-:root {
-    --red : #FF0000;
-    --black : #010101; 
-    --transpent: rgba(36, 36, 36, 0.4);
-    --white: #F5F5F5;
+
+.header__wrapper {
+    background: rgba(36, 36, 36, 0.4);
+    backdrop-filter: blur(3px);
+    height: 80px;
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    background-size: contain;
 }
 
-ul {
-    padding: 0;
-    list-style: none;
+
+
+
+
+
+
+
+
+
+/* HERO SECTION START */
+#hero {
+    background: url(/bin/img/bg1.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
 .red-text {
     color: var(--red);
-}
-
-body {
-    margin: 0;
-    padding: 0;
-
-    background-color: var(--black);
-    color: var(--white);
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .main-btn {
@@ -29,10 +36,12 @@ body {
     background: transparent;
 
     padding: 8px 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     color: var(--white);
     transition: 0.3s;
+
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .main-btn:hover {
@@ -41,12 +50,6 @@ body {
     color: black;
 }
 
-.container {
-    max-width: 1140px;
-    padding-left: 20px;
-    margin-right: 20px;
-    margin: 0 auto;
-}
 
 .plus-wrapper {
     display: flex;
@@ -90,6 +93,7 @@ body {
     transform: rotate(90deg);
 }
 
+
 .hero__wrapper {
     display: flex;
     justify-content: space-between;
@@ -97,14 +101,7 @@ body {
     height:  100vh;
 }
 
-#hero {
-    background: url(/bin/img/bg1.jpg);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
 .hero__right-title h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 42px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -112,29 +109,39 @@ body {
 
 .hero__right-subtitle p {
     font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
     margin-top: 0;
     margin-bottom: 30px;
 
 }
+
+/* HERO SECTION END */
+
+/* GALLERY SECTION START */
 
 #gallery {
     height: 100vh;
 }
 
 .gallery__heading-title h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 34px;
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+.gallery__wrapper {
+    height: 100vh;
 }
 
 .gallery__heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10%;
 }
+
+/* GALLERY SECTION END */
+
+/* FOOTER SECTION START */
 
 #footer {
     height: 100vh;
@@ -173,6 +180,8 @@ body {
     margin-left: 25px;
     box-shadow: inset 2px 2px 5px red, 1px 1px 25px red;
 }
+
+/* FOOTER SECTION END */
 
 @media (max-height: 1430px) {
     .line-1, .line-2, .line-3, .line-4 {

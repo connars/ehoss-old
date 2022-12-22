@@ -1,5 +1,5 @@
 footer {
-    background-color: white;
+    background-color: var(--black);
 }
 
 .footer__wrapper-list {
@@ -17,7 +17,8 @@ footer {
 }
 
 .footer__list-heading {
-    color: black;
+    color: #fff;
+    padding-left: 5px;
 }
 
 .footer__list {
@@ -28,7 +29,8 @@ footer {
 }
 
 .footer__item-link {
-    color: black;
+    color: 
+    #979797;
     font-weight: 500;
     text-decoration: none;
 }
