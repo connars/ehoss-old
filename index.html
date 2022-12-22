@@ -16,7 +16,10 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="icon" type="image/png" sizes="16x16" href="bin/img/favicon.ico">
+
+    <!-- CCS SCRIPT SCROLL  -->
     <link rel="stylesheet" href="./bin/css/fullpage.css">
+    <!-- SETTING CSS( ОБЩИЕ СТИЛИ )  -->
     <link rel="stylesheet" href="./bin/css/settings.css">
     <link rel="stylesheet" href="./bin/css/footer.css">
     <link rel="stylesheet" href="bin/css/main.css">
@@ -25,6 +28,17 @@
 <body>
 
     <div id="fullpage">
+        <header>
+            <div class="header__wrapper">
+                <img src="" alt="">
+                <div class="header__nav">
+
+                </div>
+                <div class="burger">
+                    
+                </div>
+            </div>
+        </header>
         <!-- BEGIN OF logo-line -->
         <div style="z-index: 3;" class="cont-for-red-l">
             <div class="line-1"></div>
@@ -96,8 +110,9 @@
                 <div class="gallery__wrapper">
                     <div class="gallery__heading">
                         <div class="gallery__heading-title">
-                            <h3>Gallery</h3>
-                            <p>Ділимося з Вами соціальним життям EHOSS.</p>
+                            <h3>Ділимося з Вами соціальним життям EHOSS.</h3>
+                            <p>Якщо Ви є користувачем екосистеми чи мережі EHOSS, ваші дописи можуть бути тут, деталі за посиланням.
+                            </p>
                         </div>
                         <div class="gallery__heading-button">
                             <button class="main-btn">
@@ -113,7 +128,7 @@
                             }
                         </style>
                         <script>
-                            window['instawall21983'] = { "token": "twH5D2p332esga/t5Bb0BcqO9TXvCF5eJ5gBr48f8J36vsbISVGgvuzhsqJWSsJ1n5qJB453RbyCdyvPUKeTfnDajIezJt9gLRyBUOHC3M0mjE7nNg==", "root_tagid": "instawall-root21983", "card_padding": "5", "card_border_radius": "5", "card_count": "5", "layout_max_width": "1128", "count_post": "5", "header_text_size": "20", "header_text_color": "#000000", "header_logo_size": "50", "header_button_text": "Подписаться", "header_button_text_size": "12", "header_button_text_color": "#ffffff", "header_button_background_color": "#0095f6", "hide_groupname": "1", "hide_text": "1", "hide_shadow": "1", "show_header": "0", "show_header_logo": "1", "show_header_button": "1" };
+                            window['instawall21983'] = { "token": "twH5D2p332esga/t5Bb0BcqO9TXvCF5eJ5gBr48f8J36vsbISVGgvuzhsqJWSsJ1n5qJB453RbyCdyvPUKeTfnDajIezJt9gLRyBUOHC3M0mjE7nNg==", "root_tagid": "instawall-root21983", "card_padding": "5", "card_border_radius": "5", "card_count": "5", "layout_max_width": "1128", "count_post": "10", "header_text_size": "20", "header_text_color": "#000000", "header_logo_size": "50", "header_button_text": "Подписаться", "header_button_text_size": "12", "header_button_text_color": "#ffffff", "header_button_background_color": "#0095f6", "hide_groupname": "1", "hide_text": "1", "hide_shadow": "1", "show_header": "0", "show_header_logo": "1", "show_header_button": "1" };
                         </script>
                         <div id="instawall-root21983" class="instawall instawall-root21983"></div>
 
@@ -148,6 +163,8 @@
             </div>
         </section>
         <!-- GALLERY END -->
+
+        <!-- FOOTER START -->
         <footer class="section" id="footer">
             <div class="footer__top container">
                 <div class="footer__top-nav">
@@ -512,11 +529,14 @@
                 </ul>
             </div>
         </footer>
+
+        <!-- FOOTER END -->
     </div>
 
 
-
+    <!-- SCRIPT SCROLL  -->
     <script src="./bin/js/fullpage.min.js"></script>
+    <!-- SETTING SCROLL -->
     <script>
         new fullpage('#fullpage', {
             autoScrolling: true,
