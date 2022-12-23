@@ -5,10 +5,12 @@ let navbar = document.querySelector(".header__navbar")
 menu.addEventListener("click" , ()=>{
     if (navbar.style.transform == "translateY(100%)") {
         navbar.style.transform = "translateY(0%)"
-        document.querySelector("#pp-nav").style.opacity = 1
+        document.querySelector("#pp-nav").style.opacity = 0
+
     }else{
         navbar.style.transform = "translateY(100%)"
-        document.querySelector("#pp-nav").style.opacity = 0
+        document.querySelector("#pp-nav").style.opacity = 1
+
     }
 })
 
