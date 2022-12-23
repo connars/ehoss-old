@@ -42,4 +42,7 @@ footer {
 @media only screen and (max-width: 680px) {
     /* MOBILE */
     
+    .footer__top-nav ul{
+        text-align: center;
+    }
 }
