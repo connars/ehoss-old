@@ -225,14 +225,19 @@ header {
         position: static;
         display: none;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
         top: 100%;
         gap: 20px;    
         padding: 20px;
         border-radius: 0 0 10px 10px;
         background: rgba(36, 36, 36, 0.4);
         backdrop-filter: blur(3px);
+    }
+
+    .header__mini__list-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .header__nav__drop-list {
