@@ -38,3 +38,8 @@ footer {
 .footer__item-link:hover {
     color: #FF0000;
 }
+
+@media only screen and (max-width: 680px) {
+    /* MOBILE */
+    
+}
