@@ -27,8 +27,8 @@ ul {
     margin: 0 auto;
 }
 
-.fp-watermark {
-    display: none;
+section {
+    background: #010101;
 }
 
 @media screen and (max-width: 600px) {
