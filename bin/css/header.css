@@ -207,7 +207,7 @@ header {
         position: fixed;
         display: flex;
         transition: all 0.3s ease;
-        transform: translateY(100%);
+        transform: translateX(100%);
         flex-direction: column;
         width: 100vw;
         height: 105vh;
