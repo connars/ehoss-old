@@ -55,7 +55,7 @@
                 <div class="line-1"></div>
             </div>
             <header class="header__wrapper">
-                <div class="header__wrapper">
+                <div id="header-wrapper" class="header__wrapper">
                     <a class="header__logo" href="">
                         <img width="18" height="46" src="./bin/img/logo-52-130-white.png" alt="">
                     </a>
@@ -944,7 +944,8 @@
 
         $(document).ready(function () {
             $('#fullpage').pagepiling({
-                easing:"linear"
+                easing:"linear",
+                normalScrollElements: '#header-wrapper'
             });
         });
     </script>

@@ -179,23 +179,6 @@ header {
         align-items: center;
     }
 
-    .header__navbar {
-        position: absolute;
-        display: none;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        margin-left: 0;
-        z-index: 9999;
-        background: rgb(36, 36, 36);
-        backdrop-filter: blur(3px);
-        gap: 0;
-    }
-
     .header__menu-btn {
         display: flex;
         margin-right: 20px;
@@ -219,4 +202,64 @@ header {
         height: 20px;
         object-fit: contain;
     }
+
+    .header__navbar {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin-left: 0;
+        z-index: 9999;
+        background: rgb(36, 36, 36);
+        backdrop-filter: blur(3px);
+        gap: 0;
+    }
+
+    .header__nav-drop {
+        position: static;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        top: 100%;
+        gap: 20px;    
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        background: rgba(36, 36, 36, 0.4);
+        backdrop-filter: blur(3px);
+    }
+
+    .header__nav__drop-list {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .active-header::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        display: none;
+        width: 100%;
+        height: 3px;
+        background-color: red;
+    }
+
+    .header__navbar-item:hover .header__navbar-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        display: none;
+        width: 100%;
+        height: 3px;
+        background-color: red;
+    }   
+
 }
