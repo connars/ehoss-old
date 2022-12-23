@@ -220,7 +220,7 @@ header {
         z-index: 9999;
         background: rgb(36, 36, 36);
         backdrop-filter: blur(3px);
-        gap: 10px;
+        gap: 15px;
     }
 
     .header__nav-drop {
