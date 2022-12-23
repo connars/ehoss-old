@@ -4,9 +4,9 @@ let navbar = document.querySelector(".header__navbar")
 
 menu.addEventListener("click" , ()=>{
     if (navbar.style.diplay == "none") {
-        navbar.style.display = "flex"
-    }else{
         navbar.style.display = "none"
+    }else{
+        navbar.style.display = "flex"
     }
 })
 

@@ -30,29 +30,30 @@
 
     <div id="fullpage">
         <!-- BEGIN OF logo-line -->
-        <div class="cont-for-red-l">
-            <div class="line-1"></div>
-            <div class="radius-1">
-                <div class="radius-11"></div>
-            </div>
-            <div class="radius-2">
-                <div class="radius-11"></div>
-            </div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-            <div class="line-4"></div>
-            <div class="radius-1">
-                <div class="radius-11"></div>
-            </div>
-            <div class="radius-2">
-                <div class="radius-11"></div>
-            </div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-            <div class="line-1"></div>
-        </div>
+
         <!-- END OF logo-line -->
         <section class="section" id="hero">
+            <div class="cont-for-red-l">
+                <div class="line-1"></div>
+                <div class="radius-1">
+                    <div class="radius-11"></div>
+                </div>
+                <div class="radius-2">
+                    <div class="radius-11"></div>
+                </div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+                <div class="line-4"></div>
+                <div class="radius-1">
+                    <div class="radius-11"></div>
+                </div>
+                <div class="radius-2">
+                    <div class="radius-11"></div>
+                </div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+                <div class="line-1"></div>
+            </div>
             <header class="header__wrapper">
                 <div class="header__wrapper">
                     <a class="header__logo" href="">
@@ -940,8 +941,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="bin/js/jquery.pagepiling.js"></script>
     <script>
+
         $(document).ready(function () {
-            $('#fullpage').pagepiling();
+            $('#fullpage').pagepiling({
+                easing:"linear"
+            });
         });
     </script>
     <script src="bin/js/main.js"></script>
