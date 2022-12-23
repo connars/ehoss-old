@@ -208,7 +208,7 @@ header {
         display: none;
         flex-direction: column;
         width: 100vw;
-        height: 100vh;
+        height: 105vh;
         overflow-y: scroll;
         justify-content: center;
         align-items: center;
@@ -220,7 +220,7 @@ header {
         z-index: 9999;
         background: rgb(36, 36, 36);
         backdrop-filter: blur(3px);
-        gap: 0;
+        gap: 10px;
     }
 
     .header__nav-drop {
@@ -271,5 +271,9 @@ header {
         height: 3px;
         background-color: red;
     }   
+
+    .header__navbar-link {
+        margin-bottom: 0px;
+    }
 
 }
