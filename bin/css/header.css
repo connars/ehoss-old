@@ -204,12 +204,14 @@ header {
     }
 
     .header__navbar {
-        position: absolute;
+        position: fixed;
         display: none;
         flex-direction: column;
         width: 100vw;
-        height: 160vh;
+        height: 100vh;
         overflow-y: scroll;
+        justify-content: center;
+        align-items: center;
         top: 0;
         right: 0;
         left: 0;
