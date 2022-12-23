@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="bin/img/favicon.ico">
 
     <!-- CCS SCRIPT SCROLL  -->
-    <link rel="stylesheet" href="./bin/css/fullpage.css">
+    <link rel="stylesheet" href="./bin/css/jquery.pagepiling.css">
     <!-- SETTING CSS( ОБЩИЕ СТИЛИ )  -->
     <link rel="stylesheet" href="./bin/css/settings.css">
     <link rel="stylesheet" href="./bin/css/footer.css">
@@ -935,11 +935,13 @@
 
     <!-- SCRIPT SCROLL  -->
     <!-- SETTING SCROLL -->
-    <script src="bin/js/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="bin/js/jquery.pagepiling.js"></script>
     <script>
-        new fullpage('#fullpage', {
-            autoScrolling: true,
-            scrollHorizontally: true,
+        $(document).ready(function () {
+            $('#fullpage').pagepiling();
         });
     </script>
     <script src="bin/js/main.js"></script>
