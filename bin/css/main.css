@@ -295,6 +295,25 @@
     .hero__right-title h1 {
         font-size: 26px;
     }
+
+    .gallery__heading-title {
+        text-align: center;
+    }
+
+    .gallery__heading-title h3{
+        font-size: 24px;
+    }
+
+    .gallery__heading-title p{
+        font-size: 16px;
+    }
+
+    .gallery__heading-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #pp-nav ul li a.active span {
