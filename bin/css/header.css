@@ -165,3 +165,58 @@ header {
 .header__logo {
     margin-left: auto;
 }
+
+.mobile-cross {
+    display: none;
+}
+
+@media only screen and (max-width: 690px) {
+    /* MOBILE */
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__navbar {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin-left: 0;
+        z-index: 9999;
+        background: rgb(36, 36, 36);
+        backdrop-filter: blur(3px);
+        gap: 0;
+    }
+
+    .header__menu-btn {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .header__logo {
+        margin-left: 20px;
+    }
+
+    .mobile-cross {
+        display: flex;
+        border: none;
+        background: none;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .mobile-cross-icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+}
