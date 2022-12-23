@@ -182,6 +182,7 @@
     height: 70vh;
     margin-left: 25px;
     box-shadow: inset 2px 2px 5px red, 1px 1px 25px red;
+    z-index: 99999999999999999 !important;
 }
 
 /* FOOTER SECTION END */
@@ -209,6 +210,11 @@
 
 .cont-for-red-l {
     position: absolute;
+    z-index: 9;
+}
+
+.header__wrapper {
+    z-index: 10;
 }
 
 
