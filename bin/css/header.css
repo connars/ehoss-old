@@ -225,13 +225,22 @@ header {
 
     .header__nav-drop {
         position: static;
-        display: none;
+        display: flex;
+        transition: all 0.3s ease;
+        transform: scale(0);
         flex-direction: column;
+        height: 0;
         gap: 5px;    
         padding: 0;
         border-radius: 0 0 10px 10px;
         background: rgba(36, 36, 36, 0.4);
         backdrop-filter: blur(3px);
+    }
+
+    .header__navbar-item:hover .header__nav-drop {
+        display: flex;
+        height: 100%;
+        transform: scale(1);
     }
 
     .header__mini__list-wrapper {
