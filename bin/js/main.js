@@ -3,21 +3,21 @@ let menu = document.querySelector(".header__menu-btn")
 let navbar = document.querySelector(".header__navbar")
 
 menu.addEventListener("click" , ()=>{
-    if (navbar.style.diplay == "none") {
-        navbar.style.display = "none"
+    if (navbar.style.transform == "translateY(100%)") {
+        navbar.style.transform = "translateY(0%)"
         document.querySelector("#pp-nav").style.opacity = 1
     }else{
-        navbar.style.display = "flex"
+        navbar.style.transform = "translateY(100%)"
         document.querySelector("#pp-nav").style.opacity = 0
     }
 })
 
 cross.addEventListener("click" , ()=>{
-    if (navbar.style.diplay == "none") {
+    if (navbar.style.transform == "translateY(100%)") {
         document.querySelector("#pp-nav").style.opacity = 0
-        navbar.style.display = "flex"
+        navbar.style.transform = "translateY(0%)"
     }else{
         document.querySelector("#pp-nav").style.opacity = 1
-        navbar.style.display = "none"
+        navbar.style.transform = "translateY(100%)"
     }
 })
