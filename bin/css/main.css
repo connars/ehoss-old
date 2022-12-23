@@ -296,3 +296,11 @@
         font-size: 26px;
     }
 }
+
+#pp-nav ul li a.active span {
+    background-color: #FF0000;
+}
+
+#pp-nav ul li a span {
+    background-color: gray;
+}
