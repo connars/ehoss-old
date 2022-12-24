@@ -210,6 +210,9 @@
 
 .cont-for-red-l {
     position: absolute;
+    max-height: 100vh;
+    height: 100vh;
+    overflow-y: hidden;
     z-index: 9;
 }
 
