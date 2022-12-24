@@ -16,3 +16,7 @@ cross.addEventListener("click", () => {
         navbar.style.transform = "translateX(100%)"
     }
 })
+
+if (window.outerWidth <= 900) {
+    document.querySelector("footer").classList.add("pp-scrollable")
+}
