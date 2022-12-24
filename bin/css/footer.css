@@ -25,7 +25,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    padding-left: 5px;
+    padding-left: 12px;
 }
 
 .footer__item-link {

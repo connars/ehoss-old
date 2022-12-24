@@ -212,9 +212,8 @@ header {
         width: 100vw;
         height: 105vh;
         overflow-y: scroll;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        align-items: stretch;
+        text-align: start;
         top: 0;
         right: 0;
         left: 0;
@@ -224,6 +223,11 @@ header {
         background: rgb(36, 36, 36);
         backdrop-filter: blur(3px);
         gap: 20px;
+    }
+
+    .header__mini-heading {
+        font-weight: normal;
+        margin: 0;
     }
 
     .header__nav-drop {
@@ -247,10 +251,12 @@ header {
     }
 
     .header__mini__list-wrapper {
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: start;
+        text-align: start;
+        padding-left: 10px;
     }
 
     .header__nav__drop-list {
@@ -272,6 +278,7 @@ header {
 
     .header__navbar-item {
         padding: 0;
+        margin-left: 20px;
     }
 
     .header__navbar-item:hover .header__navbar-link::before {
