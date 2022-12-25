@@ -19,4 +19,5 @@ cross.addEventListener("click", () => {
 
 if (window.outerWidth <= 900) {
     document.querySelector("footer").classList.add("pp-scrollable")
+    document.querySelector("#wall").classList.add("pp-scrollable")
 }

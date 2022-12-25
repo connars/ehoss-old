@@ -1,4 +1,3 @@
-
 .header__wrapper {
     background: rgba(36, 36, 36, 0.4);
     backdrop-filter: blur(3px);
@@ -81,7 +80,9 @@
     transition: transform 0.4s;
 
 }
-.line-one , .line-two {
+
+.line-one,
+.line-two {
     width: 16px;
     height: 2px;
     background-color: var(--white);
@@ -98,7 +99,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:  100vh;
+    height: 100vh;
 }
 
 .hero__right-title h1 {
@@ -176,7 +177,10 @@
     color: var(--white);
 }
 
-.line-1, .line-2, .line-3, .line-4 {
+.line-1,
+.line-2,
+.line-3,
+.line-4 {
     background: red;
     width: 5px;
     height: 70vh;
@@ -188,21 +192,33 @@
 /* FOOTER SECTION END */
 
 @media (max-height: 1430px) {
-    .line-1, .line-2, .line-3, .line-4 {
+
+    .line-1,
+    .line-2,
+    .line-3,
+    .line-4 {
         height: 57vh;
     }
 }
 
 
 @media (max-height: 950px) {
-    .line-1, .line-2, .line-3, .line-4 {
+
+    .line-1,
+    .line-2,
+    .line-3,
+    .line-4 {
         height: 50vh;
     }
 }
 
 
 @media (max-height: 600px) {
-    .line-1, .line-2, .line-3, .line-4 {
+
+    .line-1,
+    .line-2,
+    .line-3,
+    .line-4 {
         height: 40vh;
     }
 }
@@ -221,7 +237,8 @@
 }
 
 
-.radius-1, .radius-2 {
+.radius-1,
+.radius-2 {
     background: red;
     border-radius: 10px;
     height: 20px;
@@ -267,7 +284,7 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     .gallery__list {
         display: none !important;
     }
@@ -286,7 +303,7 @@
 
     .gallery__heading {
         display: grid;
-      
+
         /* justify-content: space-between; */
         margin-bottom: 5%;
     }
@@ -303,11 +320,11 @@
         text-align: center;
     }
 
-    .gallery__heading-title h3{
+    .gallery__heading-title h3 {
         font-size: 24px;
     }
 
-    .gallery__heading-title p{
+    .gallery__heading-title p {
         font-size: 16px;
     }
 
@@ -325,4 +342,86 @@
 
 #pp-nav ul li a span {
     background-color: gray;
+}
+
+/* Wall */
+
+#wall {
+    height: 100vh;
+    overflow-y: hidden;
+    vertical-align: baseline;
+}
+
+.line-0 {
+    height: 100vh;
+    background: red;
+    width: 5px;
+    margin-left: 25px;
+    box-shadow: inset 2px 2px 5px red, 1px 1px 25px red;
+    z-index: 9 !important;
+}
+
+
+
+.wall-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44vh;
+}
+
+.wall__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 54px;
+}
+
+.wall__item {
+    max-width: 361px;
+    max-height: 297px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.wall__item-obj {
+    background: #242424;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 361px;
+    height: 297px;
+    border-radius: 10px;
+    background-image: url("./../img/horse-icon.png");
+    background-repeat: no-repeat;
+    background-size: 80px 203px;
+    background-position: right 15px bottom;
+}
+
+.wall__item-link {
+    padding: 0 0 26px 26px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #FF0000;
+}
+
+/* Wall mobile */
+
+@media only screen and (max-width: 1200px) {
+    /* MOBILE */
+
+    .wall-wrapper {
+        margin-top: 3vh;
+    }
+
+    .wall__list {
+        flex-direction: column;
+    }
+
 }
