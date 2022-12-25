@@ -35,6 +35,10 @@ ul {
     margin: 0 auto;
 }
 
+.red-link {
+    color: var(--red);
+}
+
 section {
     background: #010101;
 }
@@ -44,8 +48,8 @@ section {
 @media screen and (max-width: 600px) {
     .container {
         max-width: 1140px;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 35px;
+        padding-right: 35px;
         margin: 0 auto;
     }
 

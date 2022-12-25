@@ -215,6 +215,7 @@ header {
         overflow-y: scroll;
         align-items: stretch;
         text-align: start;
+        justify-content: flex-start;
         top: 0;
         right: 0;
         left: 0;
@@ -224,6 +225,15 @@ header {
         background: rgb(36, 36, 36);
         backdrop-filter: blur(3px);
         gap: 20px;
+        padding-top: 40px;
+    }
+
+    .header__navbar-item a{
+        font-size: 26px;
+    }
+
+    .header__navbar-item {
+        max-width: 300px;
     }
 
     .header__mini-heading {
