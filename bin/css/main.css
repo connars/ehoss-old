@@ -422,6 +422,26 @@
 
     .wall__list {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+
+    .wall__item-obj {
+        background: #242424;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 261px;
+        height: 197px;
+        border-radius: 10px;
+        background-image: url("./../img/horse-icon.png");
+        background-repeat: no-repeat;
+        background-size: 60px 152px;
+        background-position: right 15px bottom;
+    }
+    
 }
