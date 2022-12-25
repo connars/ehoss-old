@@ -25,7 +25,11 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    padding-left: 12px;
+    padding-left: 17px;
+}
+
+.lower-prior {
+    margin-left: 5px;
 }
 
 .footer__item-link {
