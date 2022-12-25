@@ -131,6 +131,7 @@ header {
     border-radius: 0 0 10px 10px;
     background: rgba(36, 36, 36, 0.4);
     backdrop-filter: blur(3px);
+    width: 400px;
 }
 
 .header__nav__drop-list {
