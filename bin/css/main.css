@@ -429,6 +429,7 @@
 
 .wall-heading{
     font-size: 34px;
+    margin-top: 0;
 }
 
 .wall-heading-two {
@@ -501,4 +502,8 @@
         background-position: right 15px bottom;
     }
     
+}
+
+.tabs-mquality {
+    color: transparent !important;
 }
