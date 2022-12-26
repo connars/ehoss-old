@@ -306,4 +306,21 @@ header {
         margin-bottom: 0px;
     }
 
+    .header__mini__heading-link{
+        color: gray;
+    }
+
+    .open-dropdown::after {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-left: 3px;
+        background-image: url(./../../img/nav-open.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: all 0.3s ease;
+    }
+
 }
