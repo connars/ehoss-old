@@ -2,6 +2,7 @@ let cross = document.querySelector(".mobile-cross")
 let menu = document.querySelector(".header__menu-btn")
 let navbar = document.querySelector(".header__navbar")
 
+
 menu.addEventListener("click", () => {
     navbar.style.transform = "translateX(0%)"
     document.querySelector("#pp-nav").style.opacity = 0
@@ -21,3 +22,4 @@ if (window.outerWidth <= 900) {
     document.querySelector("footer").classList.add("pp-scrollable")
     wall.classList.add("pp-scrollable")
 }
+
