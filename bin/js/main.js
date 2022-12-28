@@ -21,5 +21,9 @@ cross.addEventListener("click", () => {
 if (window.outerWidth <= 900) {
     document.querySelector("footer").classList.add("pp-scrollable")
     wall.classList.add("pp-scrollable")
-}
+    let blocks = document.querySelectorAll(".privace__block")
 
+    for (const item of blocks) {
+        item.classList.add("swiper-slide")
+    }
+}
