@@ -442,7 +442,10 @@
 
 /* PRIVACY */
 
-
+.swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -507,6 +510,11 @@
         background-repeat: no-repeat;
         background-size: 60px 152px;
         background-position: right 15px bottom;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
     }
     
 }
