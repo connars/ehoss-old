@@ -22,8 +22,12 @@ if (window.outerWidth <= 900) {
     document.querySelector("footer").classList.add("pp-scrollable")
     wall.classList.add("pp-scrollable")
     let blocks = document.querySelectorAll(".privace__block")
+    let blocks2 = document.querySelectorAll(".privace__column-wrapper")
 
     for (const item of blocks) {
+        item.classList.add("swiper-slide")
+    }
+    for (const item of blocks2) {
         item.classList.add("swiper-slide")
     }
 }
