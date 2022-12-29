@@ -512,6 +512,13 @@
 @media only screen and (max-width: 1200px) {
     /* MOBILE */
 
+    .privace__block-text {
+        font-size: 14px;
+    }
+
+    #wall .line-0 {
+        height: 190vh;
+    }
 
     .wall-text {
         font-size: 14px;
@@ -590,3 +597,4 @@
 .tabs-lside1 {
     color: transparent !important;
 }
+
