@@ -452,9 +452,7 @@
 }
 
 
-.privace__heading {
-
-}
+.privace__heading {}
 
 .privace__date {
     font-size: 13px;
@@ -508,16 +506,259 @@
     height: 100%;
 }
 
+/* ABOUT */
+
+.about__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about__left {
+    width: 60vw;
+}
+
+.about__left-text {
+    width: 50vw;
+}
+
+.about__left-subtitle {
+    font-weight: 700;
+    text-align: end;
+    padding-right: 50px;
+}
+
+.about__right {
+    width: 30vw;
+}
+
+.about__right img {
+    width: 30vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+/* TEAM */
+
+
+.team__heading {}
+
+.team__list {
+    display: flex;
+    gap: 20px;
+}
+
+.swiper-wrapper {}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__list-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__card-img {
+    display: flex;
+    width: 18vw;
+    height: 30vh;
+    object-fit: contain;
+}
+
+.team__card-text {
+    font-weight: 500;
+}
+
+/* VIDEO PLAYER */
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --progress-bar: rgb(59, 130, 221);
+    --transition: 0.3s;
+    --red: #FF0000;
+    --transpent: rgba(36, 36, 36, 0.4);
+}
+
+.about__vide-wrapper {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+}
+
+#player {
+    background: var(--black);
+    color: var(--white);
+    overflow: hidden;
+}
+
+#player,
+#player video {
+    width: 100%;
+    height: 100%;
+}
+
+#player video {
+    z-index: 50;
+}
+
+#controls {
+    transition: var(--transition);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(12, 12, 12, 0.6));
+    opacity: 1;
+}
+
+#controls #controls-bar {
+    display: flex;
+}
+
+#controls #left-c {
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+
+#controls #left-c * {
+    position: relative;
+    left: 0;
+}
+
+#controls #right-c {
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+
+#controls #right-c * {
+    position: absolute;
+    right: 0;
+}
+
+#gettime {
+    position: absolute;
+    top: -25px;
+    padding: 2.5px 5px;
+    background: var(--progress-bar);
+    font-family: "Roboto", sans-serif;
+    font-size: 12.5px;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.fa-play {
+    width: 15px;
+    height: 15px;
+    background-image: url("./../img/play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.fa-stop {
+    width: 15px;
+    height: 15px;
+    background-image: url("./../img/stop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#controls button {
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+
+#controls #time {
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    margin: auto 5px;
+}
+
+#controls #progress-bar {
+    margin: 0 auto;
+    height: 5px;
+    max-width: 97.5%;
+    background: transparent;
+    padding: 10px 5px;
+}
+
+#controls #progress-bar:hover {
+    cursor: pointer;
+}
+
+#controls #background-bar {
+    position: absolute;
+    background: rgba(50, 50, 50, 0.5);
+    width: 97.5%;
+    height: 5px;
+}
+
+#controls #current-bar {
+    background: var(--progress-bar);
+    height: 5px;
+    width: 1px;
+    position: absolute;
+    z-index: 25;
+}
+
+#controls #current-bar::after {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    background: var(--progress-bar);
+    float: right;
+    position: relative;
+    top: -7.5px;
+    left: 10px;
+    transition: 0.3s;
+}
+
+#controls #buffer-bar {
+    background: rgba(255, 255, 255, 0.5);
+    height: 5px;
+    width: 1px;
+    position: absolute;
+    z-index: 5;
+}
+
+#controls #volume-progress-bar {
+    margin: auto 5px auto 0;
+    height: 5px;
+    background: rgba(50, 50, 50, 0.5);
+    width: 75px;
+    padding: 0 2.5px;
+}
+
+#controls #volume-progress-bar:hover {
+    cursor: pointer;
+}
+
+#controls #volume-bar {
+    background: var(--white);
+    height: 5px;
+    width: 1px;
+    position: absolute;
+    z-index: 25;
+}
+
 
 @media only screen and (max-width: 1200px) {
     /* MOBILE */
 
     .privace__block-text {
         font-size: 14px;
-    }
-
-    #wall .line-0 {
-        height: 190vh;
     }
 
     .wall-text {
@@ -581,7 +822,7 @@
         display: flex;
         flex-direction: row;
     }
-    
+
     .privace__columns {
         gap: 50px;
     }
@@ -591,10 +832,49 @@
         flex-direction: row;
     }
 
+    /* ABOUT */
+
+    .about__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about__left {
+        width: 100vw;
+    }
+
+    .about__left-text {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .about__left-subtitle {
+        font-weight: 700;
+        text-align: end;
+        padding-right: 20px;
+    }
+
+    .about__right {
+        display: none;
+        width: 30vw;
+    }
+
+    /* TEAM */
+
+    .team__list {
+        gap: 0;
+    }
+
+    .about__right img {
+        width: 30vw;
+        height: 100vh;
+        object-fit: contain;
+    }
+
 }
 
 .tabs-mquality,
 .tabs-lside1 {
     color: transparent !important;
 }
-
