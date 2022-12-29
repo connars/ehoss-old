@@ -65,8 +65,8 @@ function next() {
     video.paused
         ? Math.floor(video.currentTime) > Math.floor(video.duration)
             ? ((video.currentTime = 0), next())
-            : (video.play(), (play.innerHTML = '<img src="./../bin/img/play.svg">'))
-        : (video.pause(), (play.innerHTML = '<img src="./../bin/img/stop.svg">'));
+            : (video.play(), (play.innerHTML = '<img class="play-btn" src="./bin/img/play.svg">'))
+        : (video.pause(), (play.innerHTML = '<img class="play-btn" src="./bin/img/stop.svg">'));
 }
 
 video.ontimeupdate = () => {

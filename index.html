@@ -452,8 +452,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <video id="video"
-                                src="./bin/videos/video.MP4">
+                            <video id="video" src="./bin/videos/video.MP4">
                             </video>
                         </div>
                     </div>
@@ -1073,6 +1072,10 @@
                 easing: "linear",
                 verticalCentered: false,
                 anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivethPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninethPage'],
+                afterLoad: function (anchorLink) {
+                    if (anchorLink  == 'sixthPage') {
+                    }
+                },
                 normalScrollElements: '#privace__wrapper , #map-wrapper , #wall-wrapper , #team-wrapper'
             });
         });
