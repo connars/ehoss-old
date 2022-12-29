@@ -235,7 +235,7 @@
                 <div class="line-0"></div>
             </div>
             <div class="container">
-                <div class="wall-wrapper">
+                <div class="wall-wrapper swiper mySwiper3">
                     <div class="wall__top-text">
                         <h3 class="wall-heading">
                             Політика конфіденційності EHOSS
@@ -256,7 +256,7 @@
                         <h3 class="wall-heading wall-heading-two">Оберіть тему:</h3>
                     </div>
 
-                    <ul class="wall__list">
+                    <ul id="wall-wrapper" class="wall__list swiper-wrapper">
                         <li class="wall__item">
                             <div class="wall__item-obj">
                                 <h3 class="wall__item-heading">
@@ -365,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <a id="arrow4" class="arrow-to__bottom" href="#fourthPage">
+                <a id="arrow4" class="arrow-to__bottom" href="#fivethPage">
                     <img src="./bin/img/botton-arrow.svg" width="52" height="16" alt="">
                 </a>
         </section>
@@ -511,7 +511,7 @@
                     </li>
                 </ul>
             </div>
-            <a id="arrow4" class="arrow-to__bottom" href="#fourthPage">
+            <a id="arrow4" class="arrow-to__bottom" href="#sixthPage">
                 <img src="./bin/img/botton-arrow.svg" width="52" height="16" alt="">
             </a>
         </section>
@@ -922,8 +922,8 @@
             $('#fullpage').pagepiling({
                 easing: "linear",
                 verticalCentered: false,
-                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-                normalScrollElements: '#privace__wrapper , #map-wrapper '
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivethPage','sixthPage' ,'seventhPage'],
+                normalScrollElements: '#privace__wrapper , #map-wrapper , #wall-wrapper'
             });
         });
 
@@ -936,6 +936,8 @@
         var swiper = new Swiper(".mySwiper", {
         });
         var swiper = new Swiper(".mySwiper2", {
+        });
+        var swiper = new Swiper(".mySwiper3", {
         });
     </script>
     <script src="bin/js/main.js"></script>

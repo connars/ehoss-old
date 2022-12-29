@@ -512,9 +512,6 @@
 @media only screen and (max-width: 1200px) {
     /* MOBILE */
 
-    #wall .line-0 {
-        height: 190vh;
-    }
 
     .wall-text {
         font-size: 14px;
@@ -551,11 +548,11 @@
 
     .wall__list {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         margin-left: 0;
         margin-left: auto;
         margin-right: auto;
+        gap: 5px;
     }
 
 
@@ -580,6 +577,11 @@
     
     .privace__columns {
         gap: 50px;
+    }
+
+    #wall .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
     }
 
 }
