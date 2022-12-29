@@ -25,7 +25,9 @@ if (window.outerWidth <= 900) {
     let blocks2 = document.querySelectorAll(".privace__column-wrapper")
     let blocks3 = document.querySelectorAll(".wall__item")
     let blocks4 = document.querySelectorAll(".team__item")
+    let footerAccardion = document.querySelector(".accardion-wrapper")
 
+    footerAccardion.style.display = "block"
     for (const item of blocks) {
         item.classList.add("swiper-slide")
     }

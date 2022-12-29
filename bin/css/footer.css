@@ -1,5 +1,8 @@
 footer {
     background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer__wrapper-list {
@@ -44,14 +47,12 @@ footer {
 }
 
 .footer__bottom {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
+    padding-top: 35px;
     width: 100%;
     background: rgba(36, 36, 36, 0.4);
     backdrop-filter: blur(3px);
     z-index: 9;
-    bottom: 0;
-    position: absolute;
 }
 
 .footer__bottom-item {
@@ -60,7 +61,6 @@ footer {
 
 .footer__bottom-list {
     display: flex;
-    justify-content: space-between;
 }
 
 .footer__bottom-link {
