@@ -873,6 +873,10 @@
         font-size: 16px;
     }
 
+    .wall__item {
+
+    }
+
     .wall__item-heading {
         color: #FF0000;
         margin-bottom: 0;
@@ -922,7 +926,6 @@
         background-position: right 15px bottom;
     }
 
-    
     #privace .swiper-wrapper {
         display: flex;
         flex-direction: row;
@@ -1010,6 +1013,13 @@
     #controls {
         display: flex;
         align-items: center;
+    }
+
+    .wall__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
