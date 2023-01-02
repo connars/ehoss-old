@@ -599,6 +599,14 @@
     height: 100%;
 }
 
+.mySwiper  {
+    height: 70vh;
+}
+
+.mySwiper2  {
+    height: 80vh;
+}
+
 .aboutV__video-container {
     position: relative;
 }
