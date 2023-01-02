@@ -219,8 +219,6 @@
                         </style>
                         <div class="tabs-lside1"><a href="https://contentuniq.com/">уникальность текста</a>.</div>
                     </div>
-
-
                 </div>
             </div>
             <a id="arrow2" class="arrow-to__bottom" href="#thirdPage">
@@ -307,6 +305,14 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="arrows__wrapper">
+                <button class="swiper-button-prev3 arrow-left">
+                    <img src="/bin/img/arrow-left.svg" alt="">
+                </button>
+                <button class="swiper-button-next3 arrow-right">
+                    <img src="/bin/img/arrpw-right.svg" alt="">
+                </button>
             </div>
             <a id="arrow3" class="arrow-to__bottom" href="#fourthPage">
                 <img src="./bin/img/botton-arrow.svg" width="52" height="16" alt="">
@@ -413,6 +419,14 @@
                         </div>
                     </li>
                 </ul>
+                <div class="arrows__wrapper">
+                    <button class="swiper-button-prev5 arrow-left">
+                        <img src="/bin/img/arrow-left.svg" alt="">
+                    </button>
+                    <button class="swiper-button-next5 arrow-right">
+                        <img src="/bin/img/arrpw-right.svg" alt="">
+                    </button>
+                </div>
             </div>
             <a id="arrow3" class="arrow-to__bottom" href="#sixthPage">
                 <img src="./bin/img/botton-arrow.svg" width="52" height="16" alt="">
@@ -492,6 +506,14 @@
                                 власності та законами про недобросовісну конкуренцію.
                             </p>
                         </div>
+                    </div>
+                    <div class="arrows__wrapper">
+                        <button class="swiper-button-prev1 arrow-left">
+                            <img src="/bin/img/arrow-left.svg" alt="">
+                        </button>
+                        <button class="swiper-button-next1 arrow-right">
+                            <img src="/bin/img/arrpw-right.svg" alt="">
+                        </button>
                     </div>
                 </div>
                 <a id="arrow4" class="arrow-to__bottom" href="#eighthPage">
@@ -640,6 +662,14 @@
                         </div>
                     </li>
                 </ul>
+                <div class="arrows__wrapper">
+                    <button class="swiper-button-prev2 arrow-left">
+                        <img src="/bin/img/arrow-left.svg" alt="">
+                    </button>
+                    <button class="swiper-button-next2 arrow-right">
+                        <img src="/bin/img/arrpw-right.svg" alt="">
+                    </button>
+                </div>
             </div>
             <a id="arrow4" class="arrow-to__bottom" href="#ninethPage">
                 <img src="./bin/img/botton-arrow.svg" width="52" height="16" alt="">
@@ -1284,14 +1314,38 @@
     </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next1",
+                prevEl: ".swiper-button-prev1",
+            },
+            allowTouchMove: false,
+            loop: true
         });
         var swiper = new Swiper(".mySwiper2", {
+            navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+            },
+            allowTouchMove: false,
+            loop: true
         });
         var swiper = new Swiper(".mySwiper3", {
+            navigation: {
+                nextEl: ".swiper-button-next3",
+                prevEl: ".swiper-button-prev3",
+            },
+            allowTouchMove: false,
+            loop: true
         });
         // var swiper = new Swiper(".mySwiper3", {
         // });
         var swiper = new Swiper(".mySwiper5", {
+            navigation: {
+                nextEl: ".swiper-button-next5",
+                prevEl: ".swiper-button-prev5",
+            },
+            allowTouchMove: false,
+            loop: true
         });
     </script>
     <script src="bin/js/main.js"></script>
