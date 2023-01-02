@@ -32,9 +32,6 @@
 
 
     <div id="fullpage">
-        <!-- BEGIN OF logo-line -->
-
-        <!-- END OF logo-line -->
         <section data-menuanchor="firstPage" class="section loopTop" id="hero">
             <div class="cont-for-red-l">
                 <div class="line-1"></div>
@@ -433,28 +430,11 @@
                         Власне сучасне виробництво повного циклу від початку обробки сировини та матеріалів до
                         закінчення виготовлення готової продукції.
                     </p>
-                    <div class="about__vide-wrapper">
-                        <div id="player">
-                            <div id="controls">
-                                <div id="progress-bar">
-                                    <div id="gettime">00:00:00</div>
-                                    <div id="background-bar"></div>
-                                    <div id="current-bar"></div>
-                                    <div id="buffer-bar"></div>
-                                </div>
-                                <div id="controls-bar">
-                                    <div id="left-c">
-                                        <button onclick='next()' id="switch"><i class="fas fa-pause"></i></button>
-                                        <div id="volume-progress-bar">
-                                            <div id="volume-bar"></div>
-                                        </div>
-                                        <p id="time">00:00:00 / 00:00:00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <video id="video" src="./bin/videos/video.MP4">
-                            </video>
-                        </div>
+                    <div class="aboutV__video-container">
+                        <video id="video" class="aboutV__video" controls src="/bin/videos/video.MP4"></video>
+                        <span class="aboutV__play">
+                            <img class="aboutV__play-icon" src="/bin/img/play.svg" alt="play">
+                        </span>
                     </div>
                 </div>
             </div>
@@ -1223,9 +1203,6 @@
         </footer>
     </div>
 
-
-    <!-- SCRIPT SCROLL  -->
-    <!-- SETTING SCROLL -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -1241,8 +1218,7 @@
                 afterLoad: function (anchorLink) {
                     if (anchorLink == 'sixthPage') {
                     }
-                },
-                normalScrollElements: '#privace__wrapper , #map-wrapper , #wall-wrapper , #team-wrapper , #accardion'
+                }
             });
         });
 

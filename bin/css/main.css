@@ -589,178 +589,32 @@
     height: 80vh;
 }
 
-#player {
-    background: var(--black);
-    color: var(--white);
-    overflow: hidden;
-}
-
-#player,
-#player video {
+.aboutV__video {
+    max-width: 868px;
+    max-height: 508px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
     width: 100%;
     height: 100%;
 }
 
-#player video {
-    z-index: 50;
-}
-
-#controls {
-    transition: var(--transition);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 100;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(12, 12, 12, 0.6));
-    opacity: 1;
-}
-
-#controls #controls-bar {
-    display: flex;
-}
-
-#controls #left-c {
+.aboutV__video-container {
     position: relative;
-    width: 50%;
-    display: flex;
 }
 
-#controls #left-c * {
-    position: relative;
-    left: 0;
-}
-
-#controls #right-c {
-    position: relative;
-    width: 50%;
-    display: flex;
-}
-
-#controls #right-c * {
+.aboutV__play {
     position: absolute;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
 }
 
-#gettime {
-    position: absolute;
-    top: -25px;
-    padding: 2.5px 5px;
-    background: var(--progress-bar);
-    font-family: "Roboto", sans-serif;
-    font-size: 12.5px;
-    transition: var(--transition);
-    opacity: 0;
-}
-
-.fa-play {
-    width: 15px;
-    height: 15px;
-    background-image: url("./../img/play.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.fa-stop {
-    width: 15px;
-    height: 15px;
-    background-image: url("./../img/stop.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-#controls button {
-    height: 50px;
+.aboutV__play-icon {
     width: 50px;
-    color: #fff;
-    border: none;
-    background: transparent;
-}
-
-#controls #time {
-    color: var(--white);
-    font-family: "Roboto", sans-serif;
-    margin: auto 5px;
-}
-
-#controls #progress-bar {
-    margin: 0 auto;
-    height: 5px;
-    max-width: 97.5%;
-    background: transparent;
-    padding: 10px 5px;
-}
-
-#controls #progress-bar:hover {
-    cursor: pointer;
-}
-
-#controls #background-bar {
-    position: absolute;
-    background: rgba(50, 50, 50, 0.5);
-    width: 97.5%;
-    height: 5px;
-}
-
-#controls #current-bar {
-    background: var(--progress-bar);
-    height: 5px;
-    width: 1px;
-    position: absolute;
-    z-index: 25;
-}
-
-#controls #current-bar::after {
-    content: "";
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    border-radius: 100px;
-    background: var(--progress-bar);
-    float: right;
-    position: relative;
-    top: -7.5px;
-    left: 10px;
-    transition: 0.3s;
-}
-
-#controls #buffer-bar {
-    background: rgba(255, 255, 255, 0.5);
-    height: 5px;
-    width: 1px;
-    position: absolute;
-    z-index: 5;
-}
-
-#controls #volume-progress-bar {
-    margin: auto 5px auto 0;
-    height: 5px;
-    background: rgba(50, 50, 50, 0.5);
-    width: 75px;
-    padding: 0 2.5px;
-}
-
-#controls #volume-progress-bar:hover {
-    cursor: pointer;
-}
-
-#controls #volume-bar {
-    background: var(--white);
-    height: 5px;
-    width: 1px;
-    position: absolute;
-    z-index: 25;
-}
-
-.play-btn {
-    position: absolute;
-    width: 15px;
-    height: 15px;
+    height: 50px;
     object-fit: contain;
-    bottom: 5px;
-    left: 5px;
-    margin-bottom: -8px;
 }
 
 /* ACCARDION */
