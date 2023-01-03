@@ -511,15 +511,15 @@
 .about__wrapper {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 70px;
 }
 
 .about__left {
-    width: 60vw;
+    width: 40vw;
 }
 
 .about__left-text {
-    width: 50vw;
+    width: 40vw;
 }
 
 .about__left-subtitle {
@@ -534,7 +534,7 @@
 
 .about__right img {
     width: 30vw;
-    height: 100vh;
+    height: 80vh;
     object-fit: contain;
 }
 
@@ -590,8 +590,6 @@
 }
 
 .aboutV__video {
-    max-width: 868px;
-    max-height: 508px;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 50px;
@@ -620,9 +618,9 @@
 }
 
 .aboutV__play-icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
 }
 
 /* ACCARDION */
@@ -830,6 +828,12 @@
         width: 30vw;
     }
 
+    .aboutV__play-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
     /* TEAM */
 
     .team__list {
@@ -892,6 +896,18 @@
     
     .footer__top {
         display: none;
+    }
+
+    .footer__mini-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 25px;
+    }
+
+    .footer__mini-link {
+        text-decoration: none;
+        color: white;
     }
 }
 
