@@ -18,7 +18,7 @@ cross.addEventListener("click", () => {
     }
 })
 
-if (window.outerWidth <= 900) {
+if (window.innerWidth <= 900) {
     let blocks = document.querySelectorAll(".privace__block")
     let blocks2 = document.querySelectorAll(".privace__column-wrapper")
     let blocks3 = document.querySelectorAll(".wall__item")
