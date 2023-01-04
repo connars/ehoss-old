@@ -510,7 +510,6 @@
 
 .about__wrapper {
     display: flex;
-    align-items: center;
     gap: 70px;
     position: relative;
 }
@@ -521,12 +520,13 @@
 
 .about__left-text {
     width: 40vw;
-    margin-top: 50px;
+    margin-top: 20%;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    
 }
 
 .about__left-subtitle {
@@ -869,10 +869,11 @@
         z-index: -1;
         position: absolute;
         width: 254px;
-        height: 406px;
-        bottom: -114px;
+        height: 50vh;
+        bottom: -74px;
+        
         right: 20px;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     /* ABOUTV */
