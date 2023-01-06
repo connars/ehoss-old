@@ -982,7 +982,7 @@
         position: absolute;
         width: 254px;
         height: 50vh;
-        bottom: -74px;
+        bottom: -10%;
 
         right: 20px;
         object-fit: cover;
@@ -1044,6 +1044,11 @@
         height: 100%;
     }
 
+    .aboutV__video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        -webkit-appearance: none;
+    }
+
     .footer__mini-list {
         display: flex;
         flex-direction: column;
@@ -1064,14 +1069,14 @@
         animation: ldio-m2ixho1n198-1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
         animation-delay: -0.2s
     }
-    
+
     .ldio-m2ixho1n198 div:nth-child(2) {
         left: 48%;
         background: #ff0000;
         animation: ldio-m2ixho1n198-2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
         animation-delay: -0.1s
     }
-    
+
     .ldio-m2ixho1n198 div:nth-child(3) {
         left: 61%;
         background: #ff0000;
