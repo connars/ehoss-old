@@ -2,6 +2,9 @@ let cross = document.querySelector(".mobile-cross")
 let menu = document.querySelector(".header__menu-btn")
 let navbar = document.querySelector(".header__navbar")
 
+setTimeout(()=>{
+    document.querySelector(".loader").style.display = 'none'
+}, 2000)
 
 menu.addEventListener("click", () => {
     navbar.style.transform = "translateX(0%)"
