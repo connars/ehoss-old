@@ -337,7 +337,8 @@
 }
 
 #pp-nav ul li a.active span {
-    background-color: #FF0000;
+    background-color: black;
+    outline: 4px solid red;
 }
 
 #pp-nav ul li a span {
@@ -1090,3 +1091,110 @@
 .tabs-lside1 {
     color: transparent !important;
 }
+
+/* FORM SECTION START */
+.form__wrapper {
+    padding-top: 40px;
+}
+
+.form__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: static;
+   
+}
+
+.form__area {
+    max-width: 420px;
+    width: 100%;
+}
+
+.form_top {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.form_top input{
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+}
+
+.form_top input:focus-visible{
+    outline: 1px solid red;
+    border: 1px solid red;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 15px;
+    width: 380px;
+    position: sticky;
+    margin-bottom: 30px;
+}
+
+textarea:focus-visible{
+    outline: 1px solid red;
+    border: 1px solid red;
+}
+
+.form__area form {
+
+}
+
+@media screen and (max-width: 900px) {
+    .form_top input{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .form_top {
+        display: grid;
+        width: 100%;
+        justify-items: center;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 300px;
+        /* margin: 0 20px; */
+    }
+
+    .form__text p {
+        max-width: 360px;
+    }
+    
+    .form__area form {
+        display: grid;
+        /* justify-content: center;
+        align-content: center;
+        align-items: center; */
+        justify-items: center;
+    }
+
+    .form__area form button {
+       background-color: white;
+       color: #000;
+       max-width: 330px;
+    }
+
+    .form__wrapper {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+/* FORM SECTION END */
