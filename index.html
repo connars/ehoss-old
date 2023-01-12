@@ -217,10 +217,20 @@
                     </div>
 
                     <div class="gallery__list-mobile">
+                        <div class="scroll__help">
+
+                        </div>
+
                         <style>
                             .instawall-root40699 {
                                 min-height: 80px;
                                 margin: 0 auto
+                            }
+                            .scroll__help {
+                                background-color: transparent;
+                                position: absolute;
+                                width: 400px;
+                                height: 400px;
                             }
                         </style>
                         <script>window['instawall40699'] = { "token": "n9vy5r8dUA/rzdo33Ce0rjl/T8bHfD07YKJclojOXgGtoBHkC3I5uW/uhYvT4Pi101WbCFsBCNY5QFcK3cvqkPgXcYPzMJHSpaos60sACsZOsSqty/Zk5sbLgX+E66FEaY7mN7MLUPwsl5mv", "root_tagid": "instawall-root40699", "card_padding": "5", "card_border_radius": "5", "card_count": "2", "layout_max_width": "1128", "count_post": "4", "header_text_size": "20", "header_text_color": "#000000", "header_logo_size": "50", "header_button_text": "Подписаться", "header_button_text_size": "12", "header_button_text_color": "#ffffff", "header_button_background_color": "#0095f6", "hide_groupname": "1", "hide_text": "1", "hide_shadow": "1", "show_header": "0", "show_header_logo": "1", "show_header_button": "1" };</script>
@@ -1613,13 +1623,6 @@
             // let e = document.getElementById('instawall-root40699 > iframe');
             // e.setAttribute("scrolling", "yes");
             function start() {
-                $(".profile").removeAttr("href");
-                $("a.profile").removeAttr("href");
-                $("profile").removeAttr("href");
-                $("item instawall_img_loaded > a").removeAttr("href");
-                $("instawall_img_loaded > a").removeAttr("href");
-                $(".instawall_img_loaded > a").removeAttr("href");
-
                 $("#instawall-root40699 > iframe").removeAttr("scrolling");
                 $("#instawall-root40699 > iframe").attr("scrolling", "yes");
                 console.log('2');
