@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./bin/css/footer.css">
     <link rel="stylesheet" href="bin/css/main.css">
     <link rel="stylesheet" href="./bin/css/header.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -136,6 +138,8 @@
                 </div>
             </div>
 
+            <div id="instafeed"></div>
+         
             <div class="container">
                 <div class="hero__wrapper">
                     <div class="hero__left">
@@ -226,6 +230,8 @@
                             .tabs-lside1 {
                                 display: none
                             }
+
+                          
                         </style>
                         <div class="tabs-lside1"><a href="https://contentuniq.com/">уникальность текста</a>.</div>
                     </div>
@@ -1486,7 +1492,7 @@
             $('#fullpage').pagepiling({
                 easing: "linear",
                 verticalCentered: false,
-                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivethPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninethPage','form'],
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivethPage','form', 'sixthPage', 'seventhPage', 'eighthPage', 'ninethPage'],
                 afterLoad: function (anchorLink) {
                     if (anchorLink == 'sixthPage') {
                     }
@@ -1589,8 +1595,34 @@
             allowTouchMove: false,
             loop: true
         });
+
+        var swiper = new Swiper(".mySwiper6", {
+            navigation: {
+                nextEl: ".swiper-button-next6",
+                prevEl: ".swiper-button-prev6",
+            },
+            allowTouchMove: false,
+            loop: true
+        });
     </script>
     <script src="bin/js/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.0/instafeed.js"></script>
+  
+
+    <script>
+            // let e = document.getElementById('instawall-root40699 > iframe');
+            // e.setAttribute("scrolling", "yes");
+            function start() {
+                $("#instawall-root40699 > iframe").removeAttr("scrolling");
+                $("#instawall-root40699 > iframe").attr("scrolling", "yes");
+                console.log('2');
+            };
+
+            setTimeout(start, 2000);
+
+            
+    </script>
+
 
 </body>
 
