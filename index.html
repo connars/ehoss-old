@@ -1614,7 +1614,8 @@
             // e.setAttribute("scrolling", "yes");
             function start() {
                 $(".profile").removeAttr("href");
-                $(".profile").attr("href", "#");
+                $("a.profile").removeAttr("href");
+                $("profile").removeAttr("href");
 
                 $("#instawall-root40699 > iframe").removeAttr("scrolling");
                 $("#instawall-root40699 > iframe").attr("scrolling", "yes");
