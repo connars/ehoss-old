@@ -1026,8 +1026,8 @@
         z-index: -1;
         position: absolute;
         width: 254px;
-        height: 50vh;
-        bottom: -10%;
+        height: 40vh;
+        bottom: 0;
 
         right: 20px;
         object-fit: cover;
