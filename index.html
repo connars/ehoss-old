@@ -349,6 +349,9 @@
             <div style="top: 0; overflow: visible;" class="cont-for-red-l redder">
                 <div class="line-0"></div>
             </div>
+            <div class="about__right">
+                <img src="/bin/img/about-bg.png" alt="">
+            </div>
             <div class="container">
                 <div class="about__wrapper">
                     <div class="about__left">
@@ -373,9 +376,7 @@
                             Засновник EHOSS, українець <br><strong>Віктор Квачан</strong> 
                         </p>
                     </div>
-                    <div class="about__right">
-                        <img src="/bin/img/about-bg.png" alt="">
-                    </div>
+                  
                 </div>
             </div>
             <a id="arrow3" class="arrow-to__bottom" href="#fivethPage">
@@ -599,7 +600,7 @@
                     Оновлено 25 грудня 2022 р
                 </p>
                 <ul id="map-wrapper" class="privace__columns map-wrapper swiper-wrapper">
-                    <li class="privace__column-wrapper">
+                    <li id="first22" class="privace__column-wrapper">
                         <div class="privace__column">
                             <h3 class="privace__column-heading">
                                 EHOSS
@@ -648,7 +649,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="privace__item">
+                                <li  class="privace__item">
                                     <a class="privace__item-link" href="#">
                                         Партнери
                                     </a>
@@ -679,7 +680,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="privace__column-wrapper">
+                    <li id="end22" class="privace__column-wrapper">
                         <div class="privace__column">
                             <h3 class="privace__column-heading">
                                 Технічная інформація
@@ -1661,15 +1662,27 @@
                                 };
 
                                 if($("#first3").hasClass('swiper-slide-active')){
-                                    $('.swiper-button-next3').css("opacity","0.3");
+                                    $('.swiper-button-prev3').css("opacity","0.3");
                                 }else{
-                                    $('.swiper-button-next3').css("opacity","1");
+                                    $('.swiper-button-prev3').css("opacity","1");
                                 };
 
                                 if($("#end3").hasClass('swiper-slide-active')){
                                     $('.swiper-button-next3').css("opacity","0.3");
                                 }else{
                                     $('.swiper-button-next3').css("opacity","1");
+                                };
+
+                                if($("#first22").hasClass('swiper-slide-active')){
+                                    $('.swiper-button-prev2').css("opacity","0.3");
+                                }else{
+                                    $('.swiper-button-prev2').css("opacity","1");
+                                };
+
+                                if($("#end22").hasClass('swiper-slide-active')){
+                                    $('.swiper-button-next2').css("opacity","0.3");
+                                }else{
+                                    $('.swiper-button-next2').css("opacity","1");
                                 };
                                
                             });

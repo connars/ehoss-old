@@ -895,7 +895,8 @@
     }
 
     .wall-heading {
-        font-size: 16px;
+        font-size: 1.5em;
+        text-align: left;
     }
 
     .wall__item {}
@@ -1225,6 +1226,8 @@ textarea:focus-visible{
 
     .form__text p {
         max-width: 360px;
+        text-align: left;
+        font-size: 14px;
     }
     
     .form__area form {
