@@ -573,7 +573,6 @@
 }
 
 
-.privace__heading {}
 
 .privace__date {
     font-size: 13px;
@@ -584,15 +583,6 @@
     gap: 100px;
 }
 
-.privace__column-wrapper {}
-
-.privace__column {}
-
-.privace__column-heading {}
-
-.privace__list {}
-
-.privace__item {}
 
 .privace__item-link {
     text-decoration: none;
@@ -664,6 +654,7 @@
 .about__right {
     right: 0;
     height: 100%;
+    position: absolute;
 }
 
 .about__right img {
@@ -720,6 +711,13 @@
 
 .team__card-text {
     font-weight: 500;
+}
+
+@media screen and (max-width: 1099px) {
+    .team__card-img {
+        width: 200px !important;
+        height:200px !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -872,15 +870,17 @@
     box-shadow: 0 0 0 8px rgba(255, 0, 0, 0.2);
 }
 
-.accordion__item.active .accordion-header {}
 
 .accordion__item .accordion__item .accordion-header {
     color: white;
 }
 
-@media screen and (max-width: 1000px) {
-    .accordion {}
-}
+.wall__list {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    /* width: 100%; */
+} 
 
 
 @media only screen and (max-width: 1200px) {
@@ -892,6 +892,7 @@
 
     .wall-text {
         font-size: 14px;
+        text-align: left;
     }
 
     .wall-heading {
@@ -926,14 +927,14 @@
         text-align: center;
     }
 
-    .wall__list {
+    /* .wall__list {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
         margin-left: auto;
         margin-right: auto;
         gap: 5px;
-    }
+    } */
 
 
     .wall__item-obj {
@@ -957,11 +958,6 @@
 
     .privace__columns {
         gap: 50px;
-    }
-
-    #wall .swiper-wrapper {
-        display: flex;
-        flex-direction: row;
     }
 
     /* ABOUT */
@@ -1074,6 +1070,24 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wall__list {
+        display: flex !important;
+        /* justify-content: end; */
+        flex-wrap: initial;
+        
+        width: 100vw;
+    }
+
+    .wall__item {
+        width: 600px !important;
+    }
+
+    .wall__item-obj {
+        margin: 0 auto;
     }
 }
 
