@@ -122,4 +122,32 @@ footer {
     .cont-for-red-l {
         transform: translateX(-10px);
     }
+
+    .footer__mini-item {
+        font-size: 14px;
+    }
+    .accordion  {
+        padding-top: 20px !important;
+    }
+    .js-accordion-header {
+      font-size: 16px;
+      font-weight: 800;
+      padding: 10px !important;
+    }
+
+    .js-accordion-headerM {
+        padding: 10px !important;
+    }
+
+    .accordion-body__contents {
+        padding: 5px !important;
+    }
+
+    .js-accordion {
+        padding-top: 0 !important;
+    }
+
+    .footer__mini-list {
+        margin-top: 5px !important;
+    }
 }
