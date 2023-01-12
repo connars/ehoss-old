@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Tahoma';
+    font-family: 'Raleway', sans-serif !important;
     font-style: normal;
     font-weight: 400;
     src: local(''),
@@ -17,12 +17,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Tahoma';
+    font-family: 'Raleway', sans-serif !important;
     font-style: normal;
     background-color: var(--black);
     color: var(--white);
 }
 
+.arrow-left {
+    opacity: 0.3;
+}
 ul {
     padding: 0;
     list-style: none;

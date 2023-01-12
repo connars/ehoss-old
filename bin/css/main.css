@@ -674,7 +674,13 @@
 
 /* TEAM */
 
-
+#team-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1140px;
+}
 .team__heading {}
 
 .team__list {
@@ -697,15 +703,40 @@
 
 .team__card-img {
     display: flex;
-    width: 18vw;
-    height: 30vh;
+    width: 260px;
+    height: 260px;
     object-fit: contain;
+}
+
+.team-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.team__card-text {
+    text-align: left;
+    width: 100%;
 }
 
 .team__card-text {
     font-weight: 500;
 }
 
+@media screen and (max-width: 600px) {
+    #team-wrapper {
+        display: flex;
+        justify-content: initial;
+        flex-wrap: nowrap;
+        width: auto;
+        max-width: auto;
+    }
+
+    .team__card-text {
+        text-align: center;
+        width: 100%;
+    }
+}
+/* team end */
 /* VIDEO PLAYER */
 
 :root {
